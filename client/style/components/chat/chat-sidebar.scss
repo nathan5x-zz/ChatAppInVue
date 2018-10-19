@@ -1,0 +1,32 @@
+@mixin chatbox-sidebar-base() {
+    width: 20vw;
+    min-width: 250px;
+    background: $theme-primary;
+    @include flex-column-box;
+    padding: $padding-medium 0;
+    box-sizing: border-box;
+    color: $text-primary;
+    .profile {
+        padding: 0 $padding-medium;
+        color: $text-primary;
+        .user {
+            font-weight: bold;
+        }
+        .status {
+            font-size: $font-size-medium;
+        }
+    }
+    ul.rooms.list {
+        margin-top: 35px;
+        color: $text-primary;
+        li {
+            @include chatroom-list-item;
+        }
+    }
+}
+
+@mixin chatbox-room-sidebar() {
+    .sidebar {
+        @include chatbox-sidebar-base();
+    }
+}

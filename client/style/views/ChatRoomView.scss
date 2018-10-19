@@ -1,0 +1,26 @@
+@mixin chatbox-chatroom-base() {
+    padding: 0;
+    width: 80vw;
+    box-sizing: border-box;
+    background: $background-white;
+    @include flex-column-box;
+    justify-content: space-between;
+}
+
+@mixin chatbox-chatroom-view() {
+    .chatroom-view {
+        @include flex-row-box;
+        justify-content: flex-start;
+        >section {
+            height: $viewport-full-height;
+            overflow: hidden;
+        }
+        @include chatbox-room-sidebar;
+        .room {
+            @include chatbox-chatroom-base;
+            @include chatbox-room-header;
+            @include chatbox-chat-area;
+            @include chatbox-room-footer;
+        }
+    }
+}

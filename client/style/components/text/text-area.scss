@@ -1,0 +1,11 @@
+@import 'base';
+@mixin chatbox-text-area() {
+    .chatbox-textarea,
+    textarea {
+        @include chatbox-input-base;
+        height: 25px;
+        margin: 0 $margin-xsmall;
+        box-sizing: content-box;
+        padding: $padding-xsmall $padding-medium;
+    }
+}

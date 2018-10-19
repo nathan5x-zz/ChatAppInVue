@@ -1,0 +1,7 @@
+@import 'base';
+@mixin chatbox-input-text() {
+    input[type=text],
+    .chatbox-input {
+        @include chatbox-input-base;
+    }
+}

@@ -1,0 +1,27 @@
+@mixin chatbox-button-base() {
+    width: 100%;
+    font-size: $font-size-medium;
+    font-weight: normal;
+    display: block;
+    @include round-border;
+    @include no-border;
+    @include no-outline;
+    margin: $margin-xsmall auto;
+    padding: $padding-small $padding-medium;
+    background: $theme-primary;
+    color: $text-primary;
+    &:hover {
+        background: darken($theme-primary, 10%);
+        color: $text-white;
+        @include show-hand-cursor;
+    }
+    &:disabled,
+    &[disabled] {
+        background: lighten($theme-primary, 10%);
+        &:hover {
+            cursor: auto;
+            background: lighten($theme-primary, 10%);
+            color: $text-primary;
+        }
+    }
+}

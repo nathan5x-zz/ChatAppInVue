@@ -1,0 +1,16 @@
+@mixin chatbox-room-footer-base() {
+    padding: $padding-medium;
+    box-sizing: border-box;
+    width: 100%;
+    @include box-shadow-top;
+    z-index: 2;
+    position: relative;
+    @include flex-row-box;
+    @include flex-row-center;
+}
+
+@mixin chatbox-room-footer() {
+    footer {
+        @include chatbox-room-footer-base;
+    }
+}

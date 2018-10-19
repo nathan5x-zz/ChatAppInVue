@@ -1,0 +1,36 @@
+@mixin chatbox-room-header-base() {
+    max-height: 150px;
+    width: 100%;
+    @include box-shadow-bottom;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    padding: $padding-small 0;
+    box-sizing: border-box;
+    .title {
+        color: $text-secondary;
+    }
+    .users,
+    .users span {
+        color: lighten($text-secondary, 20%);
+        font-weight: normal;
+        .current {
+            color: $theme-primary;
+        }
+    }
+    .users span {
+        font-size: $font-size-medium;
+        &::after {
+            content: ",";
+        }
+        &:last-child::after {
+            content: "";
+        }
+    }
+}
+
+@mixin chatbox-room-header() {
+    header {
+        @include chatbox-room-header-base;
+    }
+}

@@ -1,0 +1,30 @@
+/**
+ * Animation and other transitions
+ ========================================================================== 
+ * Page animation and other transition definitions.
+ *
+ */
+.app-fade-enter {
+    opacity: 0;
+}
+
+.app-fade-enter-active {
+    transition: opacity 0.5s ease-in;
+}
+
+.app-fade-leave-active {
+    transition: opacity 0.5s ease-out;    
+    opacity: 0;
+}
+
+.msg-item-enter-active,
+.msg-item-leave-active {
+    transition: all 1s;
+}
+
+.msg-item-enter,
+.msg-item-leave-to
+    {
+    opacity: 0;
+    transform: translateY(30px);
+}

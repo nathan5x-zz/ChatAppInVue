@@ -1,0 +1,121 @@
+[
+    {
+       "name": "Tea Room",
+       "id":0,
+       "users":[
+          "Mike",
+          "Nathan",
+          "Daniel",
+          "Clark"
+       ],
+       "messages":[
+          {
+             "name": "Mike",
+             "message": "Yo folks...",
+             "id": "ccvu15025",
+             "reaction":null
+          },
+          {
+            "name": "Mike",
+            "message": "Heloooo.. Is anyone there?",
+            "id": "ccvu15025",
+            "reaction":null
+         },
+         {
+            "name": "Nathan",
+            "message": "Hi Mike. What's up?",
+            "id": "ccvu15021",
+            "reaction":null
+         },
+         {
+            "name": "Clark",
+            "message": "Yo Mike. What are you up to man?",
+            "id": "ccvu15027",
+            "reaction":null
+         },
+         {
+            "name": "Mike",
+            "message": "Coffee??",
+            "id": "ccvu15025",
+            "reaction":null
+         }
+       ]
+    },
+    {
+        "name": "Game Room",
+        "id": 1,
+        "users":[
+           "Logesh",
+           "Nathan",
+           "Andrea",
+           "Clark"
+        ],
+        "messages":[
+           {
+              "name": "Logesh",
+              "message": "Hi guys",
+              "id": "ccvu15035",
+              "reaction":null
+           },
+           {
+             "name": "Nathan",
+             "message": "Let's go to Game room. Its boring out here.",
+             "id": "ccvu15021",
+             "reaction":null
+          },
+          {
+             "name": "Logesh",
+             "message": "Yeayyyy. Let's do it. Do you Assasin Creed?",
+             "id": "ccvu15035",
+             "reaction":null
+          },
+          {
+             "name": "Nathan",
+             "message": "Oh yeah... I was thinking playing the same..",
+             "id": "ccvu15021",
+             "reaction":null
+          },
+          {
+             "name": "Clark",
+             "message": "I'm in. Will be there in 10 mins. Reserve a spot for me. Dont ditch me like last time",
+             "id": "ccvu15027",
+             "reaction":null
+          }
+        ]
+     },
+     {
+        "name": "Framework Build",
+        "id": 3,
+        "users":[
+           "Nathan",
+           "Andrea",
+           "Clark"
+        ],
+        "messages":[           
+           {
+             "name": "Nathan",
+             "message": "Did you guys check out the latest updates?",
+             "id": "ccvu15021",
+             "reaction":null
+          },
+          {
+             "name": "Andrea",
+             "message": "Nope. Anything interesting? I was going to ask you Nathan.",
+             "id": "ccvu15036",
+             "reaction":null
+          },
+          {
+             "name": "Nathan",
+             "message": "Oh yeah! There is plenty.",
+             "id": "ccvu15021",
+             "reaction":null
+          },
+          {
+             "name": "Clark",
+             "message": "Let's huddle in Tim's Room around 3pm.",
+             "id": "ccvu15027",
+             "reaction":null
+          }
+        ]
+     }
+ ]

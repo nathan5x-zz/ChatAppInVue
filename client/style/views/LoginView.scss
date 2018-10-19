@@ -1,0 +1,22 @@
+@mixin login-view-base() {
+    width: $viewport-full-width;
+    height: $viewport-full-height;
+    margin-top: 20%;
+    @include flex-column-box;
+    @include flex-row-center;    
+    // @include flex-column-center;
+    .banner {
+        width: 256px;
+    }
+    .login-ui {
+        width: 400px;
+        height: 150px;        
+        @include flex-column-box;
+    }
+}
+
+@mixin chatbox-login-view() {
+    .login-view {
+        @include login-view-base;
+    }
+}

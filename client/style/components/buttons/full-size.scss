@@ -1,0 +1,9 @@
+@import 'base';
+@mixin chatbox-button-fullsize() {
+    input[type=button],
+    .chatbox-button,
+    button,
+    button.full-size {
+        @include chatbox-button-base;
+    }
+}

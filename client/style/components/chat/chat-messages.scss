@@ -1,0 +1,52 @@
+@mixin chatbox-chat-base() {
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    background: $background-secondary;
+    padding: 0 $padding-medium;
+    box-sizing: border-box;
+    overflow: auto;
+    .message {
+        @include flex-column-box;
+        margin: $margin-small 0;
+        min-width: 10%;
+        max-width: 60%;
+        @include round-border($border-radius-large);
+        .content {
+            @include round-border($border-radius-large);
+            display: block;
+            padding: $padding-xsmall $padding-medium;
+            line-height: $font-size-xlarge;
+            width: fit-content;
+            max-width: inherit;
+        }
+        .username {
+            color: lighten($text-secondary, 20%);
+            margin: $tiny-size 0 $margin-xsmall $margin-small;
+            font-weight: normal;
+        }
+        &.received {
+            .content {
+                background: $text-white;
+                color: $text-secondary;
+            }
+        }
+        &.sent {
+            margin-left: auto;
+            .content {
+                background: $theme-primary;
+                color: $text-white;
+                margin-left: auto;
+            }
+            .username {
+                display: none;
+            }
+        }
+    }
+}
+
+@mixin chatbox-chat-area() {
+    .chat-area {
+        @include chatbox-chat-base();
+    }
+}

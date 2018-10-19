@@ -1,0 +1,66 @@
+/* 
+ *   Import external resources 
+  ========================================================================== 
+ *   This includes external Fonts and Icon font.
+ *   
+ *   P.s: The order of importing resources is important 
+ *   as there are several dependencies with the /utils 
+ *   directory
+ */
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+/* 
+ *   Import internal resources (utils)
+  ========================================================================== 
+ *   This includes color variables, dimensions, typography and other 
+ *   helper classes
+ */
+
+@import 'utils/utils';
+/* 
+ *   Import internal Components
+  ========================================================================== 
+ *   This includes all the components used in the app
+ */
+
+@import 'components/buttons/fixed';
+@import 'components/buttons/full-size';
+@import 'components/text/input-text';
+@import 'components/text/text-area';
+@import 'components/list/list-item';
+@import 'components/chat/chat-sidebar';
+@import 'components/chat/room-header';
+@import 'components/chat/room-footer';
+@import 'components/chat/chat-messages';
+/* 
+ *   Import internal Views
+  ========================================================================== 
+ *   This includes all the Views to build the main route views
+ */
+
+@import 'views/ChatroomView';
+@import 'views/LoginView';
+body {
+    font-size: 100%;
+    font-family: $font-primary;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    min-width: 320px;
+    box-sizing: border-box;
+    background: $background-secondary;
+}
+
+@mixin chatbox-bundle-styles() {
+    /*Include all the Components*/
+    @include chatbox-input-text;
+    @include chatbox-button-fullsize;
+    @include chatbox-button-fixed;
+    @include chatbox-text-area;
+    /*Include all the views*/
+    @include chatbox-login-view;
+    @include chatbox-chatroom-view;
+}
+
+@include chatbox-bundle-styles;

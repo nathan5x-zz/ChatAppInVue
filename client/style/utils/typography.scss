@@ -1,0 +1,31 @@
+
+/**
+ * Typography Styles 
+ */
+ span,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ label {
+     color: $text-primary;
+     padding: 5px 0;
+ }
+ 
+ h1 {
+     font-size: $font-size-xxlarge;
+ }
+ 
+ h2 {
+    font-size: $font-size-xlarge;
+ }
+ 
+ h3 {
+    font-size: $font-size-large;
+ }
+ 
+ h4 {
+    font-size: $font-size-medium;
+ }

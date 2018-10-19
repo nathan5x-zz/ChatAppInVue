@@ -1,0 +1,16 @@
+@mixin chatbox-input-base() {
+    width: 100%;
+    font-size: $font-size-large;
+    color: lighten($text-secondary, 10%);
+    @include round-border;
+    @include no-outline;
+    border: 1px solid lighten($background, 10%);
+    margin: $margin-small auto;
+    padding: $padding-small $padding-xsmall;
+    box-sizing: border-box;
+    &:focus {
+        color: darken($text-secondary, 10%);
+        @include no-outline;
+        border-color: $theme-primary;
+    }
+}

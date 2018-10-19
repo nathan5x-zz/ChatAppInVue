@@ -1,0 +1,9 @@
+@import 'base';
+@mixin chatbox-button-fixed() {
+    input[type=button].fixed,
+    .chatbox-button.fixed,
+    button.fixed {
+        @include chatbox-button-base;
+        width: auto;
+    }
+}
